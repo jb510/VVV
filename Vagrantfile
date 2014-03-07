@@ -12,11 +12,11 @@ Vagrant.configure("2") do |config|
 
   # Configurations from 1.0.x can be placed in Vagrant 1.1.x specs like the following.
   config.vm.provider :virtualbox do |v|
-    v.customize ["modifyvm", :id, "--memory", 512]
-    v.customize ["modifyvm", :id, "--cpus", "2"]  
+    v.customize ["modifyvm", :id, "--memory", 1024]
+    v.customize ["modifyvm", :id, "--cpus", "4"]  
     v.customize ["modifyvm", :id, "--ioapic", "on"]
 # Enable Symlinks, not working???  
-    v.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/www", "1"]
+#    v.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/www", "1"]
   end
 
   # Forward Agent
