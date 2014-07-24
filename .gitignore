@@ -31,9 +31,11 @@
 # No need to share our mysql data with each other
 /database/data/*
 
-# No need to share our individual sites of error logs and cachegrind files with each other
+# Log files should be ignored.
+/log/*.log
+
+# No need to share our individual sites with each other
 /www/*
-/logs/*
 
 # And no need to share individual SQL files with each other
 *.sql
