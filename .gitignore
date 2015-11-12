@@ -38,6 +38,10 @@
 
 # No need to share our individual sites with each other
 /www/*
+/www-inactive
+/www-inactive/*
+/vv-blueprints.json
+/Vagrantfile-backup
 
 # And no need to share individual SQL files with each other
 *.sql
