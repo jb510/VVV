@@ -808,9 +808,9 @@ echo " "
 echo "Installing/updating WordPress Stable, Trunk & Develop"
 
 wordpress_default
-wpsvn_check
-wordpress_trunk
-wordpress_develop
+#wpsvn_check
+#wordpress_trunk
+#wordpress_develop
 
 # VVV custom site import
 echo " "
